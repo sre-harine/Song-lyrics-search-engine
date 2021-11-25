@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  	<meta charset="UTF-8">
+  	<meta name='viewport' content='width=device-width, initial-scale=1'>
+ 	<title>Lyrics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>  
+body {
+	background-repeat: no-repeat;
+	background-color: #cccccc;
+    font-family: Garamond, serif;
+    font-size: 16px;  
+}
+h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 26px;  
+  color: #f50057;
+}
+img {
+	position: absolute;
+	top: 60px;
+	width: 500px;
+    height: 700px;
+}
+.btn1{
+	background-color: #f50057;
+}
+div.b {
+	width: 600px; 
+ 	word-wrap: break-word;
+	text-align: center;
+	margin: auto;
+  	padding: 15px;
+}
+</style>
+
+</head>
+<body>
+	<div class="container-fluid" >
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="https://www.wdkx.com/wp-content/uploads/music-4027332_1920.png">
+		</div>
+    	<div class="col-sm-8">
+			<div class="jumbotron" style="background-color:#cccccc;">
+				<a href="{% url 'index' %}" class="btn btn-rounded btn1">
+				<span class="glyphicon glyphicon-arrow-left" style="color:white; font-size:20px;"></span>
+            	</a>
+				<br>
+				<div class="b">
+                    <h3>{{names}}</h3>
+				<p>{{lyrics}}</p>
+				</div>
+			</div>
+    	</div>
+	</div>
+	</div>
+  
+</body>
+</html>
+
+
+
